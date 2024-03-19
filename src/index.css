@@ -5,8 +5,52 @@
  margin: 0px;
  box-sizing: border-box;
  font-family: "Patrick Hand", cursive;
-  font-weight: 400;
-  font-style: normal;
+ font-weight: 400;
+ font-style: normal;
+}
+
+body{
+ height: 100vh;
+ width: 100vw;
+ color: white;
+ background-color:#1C1C28;
+ overflow-x: hidden;
+}
+
+.btn{
+ color: #eee;
+ border: none;
+ font-size: 24px;
+ padding: 15px 10px;
+ border-radius: 4px;
+ font-family: sans-serif;
+ display: inline-block;
+}
+
+.btn.get_quote{
+ background-color: #00CFDE;
+}
+
+.btn.get_img{
+ /* background-color: #FF3B3B; */
+ /* background-color: #AC5DD9; */
+ background-color: #FF5C5C;
+}
+
+.btn.download{
+ background-color: #06C270;
+}
+
+.btn.sudo{
+ background-color: #8BC34A;
+}
+
+#main{
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ flex-direction: column;
+ height: 100vh;
 }
 
 #quote-container{
@@ -14,7 +58,8 @@
 }
 
 .uploaded_img{
- width: 70vw;
+ max-width: 70vw;
+ width: 650px;
 }
 
 .quote_box{
