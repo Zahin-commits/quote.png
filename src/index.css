@@ -25,6 +25,7 @@ body{
  border-radius: 4px;
  font-family: sans-serif;
  display: inline-block;
+ margin: 10px;
 }
 
 .btn.get_quote{
@@ -35,6 +36,7 @@ body{
  /* background-color: #FF3B3B; */
  /* background-color: #AC5DD9; */
  background-color: #FF5C5C;
+ cursor: default;
 }
 
 .btn.download{
@@ -53,6 +55,17 @@ body{
  height: 100vh;
 }
 
+
+.display{
+  /* background-color: #28293D; */
+  width: 750px;
+  height: 450px;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ }
+
 #quote-container{
  display: inline-block;
 }
@@ -66,9 +79,9 @@ body{
   color: white;
   position: absolute;
   width: 100%;
-  height: 98%;
+  height: 99%;
   font-size: 35px;
-  top: 49%;
+  top: 49.4%;
   left: 50%;
   transform: translate(-50%, -50%);
   background-color: rgba(0, 0, 0, 0.5);
@@ -82,7 +95,7 @@ body{
 }
 
 .quote_box .quote{
- width: 75%;
+ width: 85%;
  line-height: 40px;
 }
 
@@ -90,4 +103,64 @@ body{
  font-size: 20px;
  opacity: 0.8;
  margin-top: 23px;
+}
+
+/* Loading section */
+
+.spinner {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  /* border: 9px solid #474bff; */
+  border: 9px solid #F2F2F5;
+  animation: spinner-bulqg1 0.8s infinite linear alternate,
+       spinner-oaa3wk 1.6s infinite linear;
+}
+
+@keyframes spinner-bulqg1 {
+  0% {
+     clip-path: polygon(50% 50%, 0 0, 50% 0%, 50% 0%, 50% 0%, 50% 0%, 50% 0%);
+  }
+
+  12.5% {
+     clip-path: polygon(50% 50%, 0 0, 50% 0%, 100% 0%, 100% 0%, 100% 0%, 100% 0%);
+  }
+
+  25% {
+     clip-path: polygon(50% 50%, 0 0, 50% 0%, 100% 0%, 100% 100%, 100% 100%, 100% 100%);
+  }
+
+  50% {
+     clip-path: polygon(50% 50%, 0 0, 50% 0%, 100% 0%, 100% 100%, 50% 100%, 0% 100%);
+  }
+
+  62.5% {
+     clip-path: polygon(50% 50%, 100% 0, 100% 0%, 100% 0%, 100% 100%, 50% 100%, 0% 100%);
+  }
+
+  75% {
+     clip-path: polygon(50% 50%, 100% 100%, 100% 100%, 100% 100%, 100% 100%, 50% 100%, 0% 100%);
+  }
+
+  100% {
+     clip-path: polygon(50% 50%, 50% 100%, 50% 100%, 50% 100%, 50% 100%, 50% 100%, 0% 100%);
+  }
+}
+
+@keyframes spinner-oaa3wk {
+  0% {
+     transform: scaleY(1) rotate(0deg);
+  }
+
+  49.99% {
+     transform: scaleY(1) rotate(135deg);
+  }
+
+  50% {
+     transform: scaleY(-1) rotate(0deg);
+  }
+
+  100% {
+     transform: scaleY(-1) rotate(-135deg);
+  }
 }
