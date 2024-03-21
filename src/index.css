@@ -182,3 +182,26 @@ body{
    margin-top: 23px;
 }
 }
+
+@media(max-width: 560px){
+
+ .display{
+  height: 300px;
+ }
+
+ .btn{
+  font-size: 18px;
+ }
+}
+
+@media(max-width: 460px){
+
+ .display{
+  height: 200px;
+ }
+
+ .btn{
+  font-size: 15px;
+  padding: 10px 5px;
+ }
+}
