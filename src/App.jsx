@@ -93,7 +93,9 @@ useEffect(()=>{
 
 export default App
 
-
+//I, the developer of this side is not in possition of any of the quotes or images used in this site
+//it is fetched from apis that are creaded by somebody else 
+//so all the creadit goes to the creators of the creators of this two apis btllow  
 
 //https://dummyjson.com/quotes/random
 //https://random-image-pepebigotes.vercel.app/api/random-image
