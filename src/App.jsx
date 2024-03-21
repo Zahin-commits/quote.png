@@ -52,14 +52,7 @@ useEffect(()=>{
   return (
     <>
     <div id='main'>
-      <div className="input_btn">
-       <button className='btn get_quote' onClick={fetchQuote}>Change Quote</button>
-
-        <button className="btn get_img" onClick={handleImg}>
-        {isImgLoading ? 'Loading...' : 'Refresh Image'}
-        </button>
-      </div>
-
+     
      <div className='display'> {(imgUrl && quote) ? (
         
          <div id="quote-container" style={{ position: 'relative' }}>
@@ -83,7 +76,15 @@ useEffect(()=>{
           <div className="spinner"></div>
       )
        } </div>
-      
+
+       <div className="input_btn">
+       <button className='btn get_quote' onClick={fetchQuote}>Change Quote</button>
+
+        <button className="btn get_img" onClick={handleImg}>
+        {isImgLoading ? 'Loading...' : 'Refresh Image'}
+        </button>
+      </div>
+
       <button className='btn download' onClick={handleDownload}>Download</button>
     </div>
     </>

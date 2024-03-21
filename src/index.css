@@ -58,7 +58,7 @@ body{
 
 .display{
   /* background-color: #28293D; */
-  width: 750px;
+  /* width: 750px; */
   height: 450px;
   border-radius: 6px;
   display: flex;
@@ -68,6 +68,7 @@ body{
 
 #quote-container{
  display: inline-block;
+ /* border: 2px solid red; */
 }
 
 .uploaded_img{
@@ -80,7 +81,8 @@ body{
   position: absolute;
   width: 100%;
   height: 99%;
-  font-size: 35px;
+  /* font-size: 35px; */
+  font-size: 3.6vw;
   top: 49.4%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -96,13 +98,14 @@ body{
 
 .quote_box .quote{
  width: 85%;
- line-height: 40px;
+ line-height: 4.5vw;
 }
 
 .quote_box .author{
- font-size: 20px;
+ /* font-size: 20px; */
+ font-size: 2.1vw;
  opacity: 0.8;
- margin-top: 23px;
+ margin-top: 3vw;
 }
 
 /* Loading section */
@@ -163,4 +166,19 @@ body{
   100% {
      transform: scaleY(-1) rotate(-135deg);
   }
+}
+
+@media(min-width: 950px) {
+ .quote_box{
+  font-size: 40px;
+ }
+
+ .quote_box .quote{
+  line-height: 3.5vw;
+  width: 90%;
+ }
+
+ .quote_box .author {
+   margin-top: 23px;
+}
 }
